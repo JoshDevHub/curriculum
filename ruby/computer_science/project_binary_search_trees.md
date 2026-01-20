@@ -10,7 +10,7 @@ You'll build a balanced BST in this assignment. Do not use duplicate values beca
 
 <div class="lesson-content__panel" markdown="1">
 
-1. Build a `Node` class. It should have an attribute for the data it stores as well as its left and right children. As a bonus, try including the `Comparable` module and compare nodes using their data attribute.
+1. Build a `Node` class. It should have an attribute for the data it stores as well as its left and right children.
 
 1. Build a `Tree` class which accepts an array when initialized. The `Tree` class should have a `root` attribute, which uses the return value of `#build_tree` which you'll write next.
 
