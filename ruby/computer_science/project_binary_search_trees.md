@@ -34,6 +34,8 @@ You'll build a balanced BST in this assignment. Do not use duplicate values beca
 
    </div>
 
+1. Write an `#include?(value)` method which accepts a value and returns `true` if the given value is in the tree. If the value isn't in the tree, it should return `false`.
+
 1. Write an `#insert(value)` method which accepts a value and inserts a new node with that value into the tree. Be sure to insert in a way that preserves the "binary search" property: for each node, every node to its left must have a lower value, and every node to its right must have a greater value. If the method is called with a value that already exists in the tree, the method should do nothing.
 
    <div class="lesson-note" markdown="1">
