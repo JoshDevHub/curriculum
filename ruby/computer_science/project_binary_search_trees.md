@@ -48,11 +48,9 @@ You'll build a balanced BST in this assignment. Do not use duplicate values beca
 
 1. Write a `#delete(value)` method which accepts a value and removes it from the tree. You'll have to deal with multiple cases for this based on how many children the targeted node has. If the given values doesn't exist in the tree, the method should do nothing.
 
-1. Write a `#find` method which accepts a value and returns the node with the given value.
+1. Write a `#level_order` method which accepts a block. This method should traverse the tree in breadth-first level order and yield each value to the provided block. With a block, it should return `self`. This method can be implemented using either iteration or recursion (try implementing both!). If a block isn't given, the method should return an `Enumerator`.
 
-1. Write a `#level_order` method which accepts a block. This method should traverse the tree in breadth-first level order and yield each node to the provided block. This method can be implemented using either iteration or recursion (try implementing both!). The method should return an array of values if no block is given. **Tip:** You will want to use an array acting as a queue to keep track of all the child nodes that you have yet to traverse, and to add new ones to the list ([video on level order traversal](https://www.youtube.com/watch?v=86g8jAQug04)).
-
-1. Write `#inorder`, `#preorder`, and `#postorder` methods that accepts a block. Each method should traverse the tree in their respective depth-first order and yield each node to the provided block. The methods should return an array of values if no block is given. The video [Binary Tree Traversal: Preorder, Inorder, Postorder](https://www.youtube.com/watch?v=gm8DUJJhmY4) explains the topic clearly.
+1. Write `#inorder`, `#preorder`, and `#postorder` methods. Like the `#level_order` method above, these should accept a block and yield each of the tree's values to the block in their respective depth-first order. With a block, they should return `self`, and without a block, they should return an `Enumerator`. If you need a resource for how the different traversals work, the video [Binary Tree Traversal: Preorder, Inorder, Postorder](https://www.youtube.com/watch?v=gm8DUJJhmY4) explains the topic clearly.
 
 1. Write a `#height` method that accepts a value and returns the height of the node containing that value. Height is defined as the number of edges in the longest path from that node to a leaf node. If the value is not found in the tree, the method should return `nil`.
 
